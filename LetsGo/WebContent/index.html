@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Event Recommendation">
+  <meta name="author" content="Chenfei Jiang">
+  <title>Event Recommendation Final</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header class="top-header">
+    <nav class="top-nav">
+      <a href="#">Home</a>
+      <a href="#">Contact</a>
+      <a href="#">About</a>
+    </nav>
+    <span id="welcome-msg"></span>
+    <a id="logout-link" href="logout">Logout</a>
+    <i id="avatar" class="avatar fa fa-user fa-2x"></i>
+  </header>
+  
+  <div class="container">
+    <header>
+      <p>
+        <span>Event</span>
+        <br /> Recommendation
+      </p>
+    </header>
+
+    <section class="main-section">
+      <div id="login-form">
+        <label for="username">Username:</label>
+        <input id="username" name="username" type="text">
+        <label for="password">Password:</label>
+        <input id="password" name="password" type="password">
+        <button id="login-btn">Login</button>
+        <p id="login-error"></p>
+      </div>
+
+      <aside id="item-nav">
+        <div class="nav-icon">
+          <i class="fa fa-sitemap fa-2x"></i>
+        </div>
+        <nav class="main-nav">
+          <a href="#" id="nearby-btn" class="main-nav-btn active">
+            <i class="fa fa-map-marker"></i> Nearby
+          </a>
+          <a href="#" id="fav-btn" class="main-nav-btn">
+            <i class="fa fa-heart"></i> My Favorites
+          </a>
+          <a href="#" id="recommend-btn" class="main-nav-btn">
+            <i class="fa fa-thumbs-up"></i> Recommendation
+          </a>
+        </nav>
+      </aside>
+
+      <ul id="item-list">
+        <li class="item">
+          <img alt="item image" src="https://3tldfq32dnq2vdqzv3y02oj1-wpengine.netdna-ssl.com/wp-content/uploads/2015/01/5bestnoodlesxian.jpg" />
+          <div>
+            <a class="item-name" href="#">Item</a>
+            <p class="item-category">Restaurant</p>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+          <p class="item-address">2675 Broadway<br/> New York<br/> NY</p>
+          <div class="fav-link">
+            <i class="fa fa-heart"></i>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>
+  
+  <footer>
+    <p class="title">What We Do</p>
+    <p>"Help you find the best place to go."</p>
+    <ul>
+      <li>
+        <p><i class="fa fa-map-o fa-2x"></i></p>
+        <p>Columbia University, NY</p>
+      </li>
+      <li>
+        <p><i class="fa fa-envelope-o fa-2x"></i></p>
+        <p>cj2526@columbia.com</p>
+      </li>
+      <li>
+        <p><i class="fa fa-phone fa-2x"></i></p>
+        <p>+1 866 128 436</p>
+      </li>
+    </ul>
+  </footer>
+  
+  <script src="https://rawgit.com/emn178/js-md5/master/build/md5.min.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
